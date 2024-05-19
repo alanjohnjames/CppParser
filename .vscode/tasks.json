@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "compile c++ file",
+			"command": "clang++",
+			"args": [
+				"-g",
+				"${currentFile}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
